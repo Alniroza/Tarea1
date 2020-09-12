@@ -41,10 +41,10 @@ def logMaker(data, err = 0):
 		print(log)
 		return 0
 	else:
-		print('escrbiendo')
 		log = ""
 		if err == 0:
 			log += data[0] + ', ' + data[1] + ', ' + data[2] + ', ' + data[3] + ', ' + data[4] + ', ' + data[5] + '\n'
+			log.encode('utf-8')
 			file.write(log)
 		else:
 			print(data)
